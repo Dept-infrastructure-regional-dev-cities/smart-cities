@@ -10,7 +10,7 @@ import {
 } from '../../constants';
 import style from './SideBar.scss';
 { /* import logo from '../../images/australia-dta-logo.svg'; */}
-import logo from '../../images/crest1.png';
+import logo from '../../images/DoIRDC_Stacked_reverse.svg';
 
 class SideBar extends Component {
   componentWillReceiveProps(nextProps) {

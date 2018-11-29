@@ -14,10 +14,6 @@ import Link from '../../Link/Link';
 { /* import dtaLogo from '../../../images/crest1.png'; */ }
 const links = [
   {
-    text: STRINGS.FEEDBACK_LINK,
-    href: LINKS.FEEDBACK,
-  },
-  {
     text: STRINGS.PRIVACY_LINK,
     href: `${LINKS.ADDITIONAL_INFORMATION}#${ELEMENT_IDS.PRIVACY_POLICY}`,
   },
@@ -62,6 +58,7 @@ const Footer = props => (
 
         <div className={style.footerLinks}>
           <div className={style.footerLinksRow}>
+		  <a href="https://infrastructure.gov.au/utilities/feedback.aspx">Give feedback</a>&#160; &#160; 
             {links.map(link => (
               <NavLink
                 key={link.href}

@@ -41,7 +41,7 @@ const Header = props => (
       </div>
       <div className={style.orgContainer}>
       
-        { props.onFeedbackPage || <FeedbackButton /> }
+
       </div>
     </div>
 

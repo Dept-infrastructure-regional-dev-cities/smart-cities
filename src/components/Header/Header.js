@@ -12,6 +12,7 @@ import {
   NO_CITY,
 } from '../../constants';
 
+import star from './star-white.svg';
 import style from './Header.scss';
 
 const Header = props => (
@@ -23,6 +24,9 @@ const Header = props => (
         label="open navigation menu"
       />
 
+      <img className={style.star} src={star} alt="star icon" />
+      <span className={style.govAu}>GOV.AU</span>
+      <span className={style.govWebsite}>Official Australian Government Website</span>
       <div className={style.compactTitle}>National Cities Performance</div>
       <div className={style.compactSubtitle}>Framework Dashboard</div>
     </div>

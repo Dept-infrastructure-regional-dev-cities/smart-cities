@@ -55,7 +55,7 @@ export const CATEGORIES = [
             description: 'This shows the percentage change in the level of the population on the preceding year, and the average annual percentage change over the past ten years.\n\nSource: ABS - Regional Population Growth',
             indicatorIds: [
               'growthRate',
-        
+              'population10yr',
             ],
           },
           {
@@ -107,14 +107,6 @@ export const CATEGORIES = [
             description: 'This shows the proportion of the population that self identifies as having disability. \n\nSource: ABS - Disability, Ageing and Carers',
             indicatorIds: [
               'disabilityRate',
-            ],
-          },
-		  {
-            name: 'Languages other than English spoken at home',
-            axisTitle: 'Share of households',
-            description: 'This shows the proportion of residents who speak a language other than English at home. \n\nSource: ABS Census 2016',
-            indicatorIds: [
-              'languagesOtherThanEnglish',
             ],
           },
         ],
@@ -210,6 +202,14 @@ export const CATEGORIES = [
             description: 'This shows an index of relative socio-economic disadvantage. A low score indicates relatively greater disadvantage.\n\nSource: ABS - Census 2011',
             indicatorIds: [
               'socioEconomicIndex',
+            ],
+          },
+          {
+            name: 'Languages other than English spoken at home',
+            axisTitle: 'Share of households',
+            description: 'This shows the proportion of residents who speak a language other than English at home. \n\nSource: ABS Census 2016',
+            indicatorIds: [
+              'languagesOtherThanEnglish',
             ],
           },
         ],
@@ -661,7 +661,7 @@ export const CATEGORIES = [
         iconId: 'liveabilityLiveability',
         summaryIndicatorIds: [
           'volunteeringRate',
-          
+          'languagesOtherThanEnglish',
         ],
         charts: [
           {
@@ -682,7 +682,14 @@ export const CATEGORIES = [
               'volunteeringRate',
             ],
           },
-
+          {
+            name: 'Languages other than English spoken at home',
+            axisTitle: 'Share of households',
+            description: 'This shows the proportion of residents who speak a language other than English at home. \n\nSource: ABS Census 2016',
+            indicatorIds: [
+              'languagesOtherThanEnglish',
+            ],
+          },
           {
             name: 'Index of Relative Socio-economic Disadvantage',
             axisTitle: '',
@@ -826,6 +833,7 @@ export const CATEGORIES = [
         iconId: 'innovationDigital',
         summaryIndicatorIds: [
           'knowledgeWorkersRatio',
+          'linkedInConnectivityLocal',
         ],
         charts: [
           {
@@ -834,6 +842,17 @@ export const CATEGORIES = [
             description: 'This shows the share of employed persons that work in the top three knowledge-intensive service industries: professional, scientific and technical services; information, media and telecommunications; and financial and insurance services. \n\nSource: ABS Labour Force',
             indicatorIds: [
               'knowledgeWorkersRatio',
+            ],
+          },
+          {
+            name: 'LinkedIn contacts by location',
+            axisTitle: '',
+            description: 'This shows the average share of LinkedIn account holder contacts that are located in the same city, other parts of Australia or overseas. \n\nSource: LinkedIn',
+            stacked: true,
+            indicatorIds: [
+              'linkedInConnectivityLocal',
+              'linkedInConnectivityRestOfNation',
+              'linkedInConnectivityInternational',
             ],
           },
         ],
@@ -876,7 +895,7 @@ export const CATEGORIES = [
             description: 'This shows the percentage change in the level of the population on the preceding year, and the average annual percentage change over the past ten years.\n\nSource: ABS - Regional Population Growth',
             indicatorIds: [
               'growthRate',
-              
+              'population10yr',
             ],
           },
           {
@@ -928,14 +947,6 @@ export const CATEGORIES = [
             description: 'This shows the proportion of the population that self identifies as having disability. \n\nSource: ABS - Disability, Ageing and Carers',
             indicatorIds: [
               'disabilityRate',
-            ],
-          },
-		  {
-            name: 'Languages other than English spoken at home',
-            axisTitle: 'Share of households',
-            description: 'This shows the proportion of residents who speak a language other than English at home. \n\nSource: ABS Census 2016',
-            indicatorIds: [
-              'languagesOtherThanEnglish',
             ],
           },
         ],
